@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Termites
+  m_EditorClassIdentifier: 
+  eventName: Termites
+  eventDescription: 'Termites have gotten into your wood. You had to throw some of
+    it out.
+
+    [ -10% to current Wood Supply ]'
+  eventWeight: 1
+  minTimeToNextEvent: 5
+  maxTimeToNextEvent: 10
+  duration: 0
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wood
+    targetResourceAttribute: 4
+    modifierValue:
+      valueToChange: -10
+      percent: 1
+  eventRequirements:
+  - {fileID: 11400000, guid: 1df444c2f9001bf4e975b715e64beb3e, type: 2}
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}

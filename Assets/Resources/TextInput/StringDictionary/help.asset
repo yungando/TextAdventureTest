@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeeb79d230ac94090cad7132ba97de, type: 3}
+  m_Name: help
+  m_EditorClassIdentifier: 
+  keyWord: help
+  text: "help\t\t\tLists all commands.\nproject\t\t\tTypes general information about
+    the Unity Project.\nclear\t\t\tClears the console screen.\nkeyboard\t\tToggles
+    the keyboard audio effect.\nambient\t\tToggles the spatial ambient audio effects.\nlorem\t\tTypes
+    the \"Lorem Ipsum\" placeholder text in the console.\nquit\t\t\tCloses the console
+    screen."

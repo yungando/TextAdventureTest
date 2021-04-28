@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Rainy Day
+  m_EditorClassIdentifier: 
+  eventName: Rainy Day
+  eventDescription: 'Unfortunately the weather is terrible. Work for your woodsmen
+    is going to be a slog. But your fishermen might have a better catch.
+
+    [ Temporarily increased Wood''s time to produce by 5 ]
+
+    [ Temporarily increased Fish''s supply per production by 100% ]'
+  eventWeight: 2
+  minTimeToNextEvent: 10
+  maxTimeToNextEvent: 15
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wood
+    targetResourceAttribute: 0
+    modifierValue:
+      valueToChange: 5
+      percent: 0
+  - targetResource: Fish
+    targetResourceAttribute: 3
+    modifierValue:
+      valueToChange: 100
+      percent: 1
+  eventRequirements:
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}
