@@ -156,7 +156,7 @@ public class ResourceObject : ScriptableObject
     {
         if(_mod.percent == true)
         {
-            currentSupply *= (int)(_mod.valueToChange + 1);
+            currentSupply = (int)(currentSupply * ((_mod.valueToChange / 100.0f) + 1));
         }
         else
         {
@@ -171,7 +171,7 @@ public class ResourceObject : ScriptableObject
     {
         if(_mod.percent == true)
         {
-            currentProductionProgress *= (int)(_mod.valueToChange + 1);
+            currentProductionProgress *= (int)((_mod.valueToChange / 100.0f) + 1);
         }
         else
         {

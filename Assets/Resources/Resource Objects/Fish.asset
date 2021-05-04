@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fish
   m_EditorClassIdentifier: 
   resourceName: Fish
-  resourceDescription: Fish Description
+  resourceDescription: Fish are aquatic, craniate, gill-bearing animals that lack
+    limbs with digits.
   unlocked: 0
   goldToUnlock: 300
   timeToProduce:
@@ -21,8 +22,8 @@ MonoBehaviour:
   currentProductionProgress: 0
   currentSupply: 0
   goldValue:
-    _baseValue: 4
+    _baseValue: 3
   supplyCapacity:
-    _baseValue: 50
+    _baseValue: 300
   supplyPerProduction:
-    _baseValue: 5
+    _baseValue: 10

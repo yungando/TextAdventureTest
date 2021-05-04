@@ -16,4 +16,8 @@ MonoBehaviour:
   text: '<<<< Procedural Game Events Prototype >>>>
 
 
-    Type ''help'' for list of commands.'
+    Type ''help'' to list all commands.
+
+    Type ''help tutorial'' to learn how to play the game.
+
+    Type ''help project'' to learn more about the project.'

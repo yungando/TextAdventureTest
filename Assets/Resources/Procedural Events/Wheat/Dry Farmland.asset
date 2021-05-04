@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Dry Farmland
+  m_EditorClassIdentifier: 
+  eventName: Dry Farmland
+  eventDescription: 'Your farmland has dried out. Not as much Wheat will grow.
+
+    [ Temporarily decreases Wheat''s supply per production by 50% ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wheat
+    targetResourceAttribute: 3
+    modifierValue:
+      valueToChange: -50
+      percent: 1
+  eventRequirements:
+  - {fileID: 11400000, guid: e57e581e894c1c344b458f81fef1bd02, type: 2}
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}

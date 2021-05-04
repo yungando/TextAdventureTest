@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Procedural Gameplay Events</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/builds.json", {onProgress: UnityProgress});
+      window.addEventListener("resize", onResize);
+
+      function onResize()
+      {
+        unityInstance.SendMessage("GameController", "SetGameWidth", window.innerWidth);
+        unityInstance.SendMessage("GameController", "SetGameHeight", window.innerHeight);
+        unityInstance.SendMessage("GameController", "SetGameResolution");
+      }
+
+    </script>
+  </head>
+  <body style="margin:0; overflow:hidden; background-color: #231f20;">
+    <div id="unityContainer"></div>
+  </body>
+</html>

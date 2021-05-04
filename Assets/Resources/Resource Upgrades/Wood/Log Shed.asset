@@ -16,9 +16,9 @@ MonoBehaviour:
   upgradeCategory: 3
   upgradeDescription: 'A brand new shed to store extra logs in.
 
-    [Permanently increases supply capacity by 50]'
+    [ Permanently increases Wood''s supply capacity by 50 ]'
   unlocked: 0
-  goldToUnlock: 100
+  goldToUnlock: 150
   resourceModifiers:
   - targetResource: Wood
     targetResourceAttribute: 2

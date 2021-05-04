@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 using TMPro;
@@ -9,6 +10,12 @@ public class GameController : Singleton<GameController>
     [SerializeField] public float gold = 0;
     [HideInInspector] public bool gameRunning = false;
     [HideInInspector] public TextInput textInput;
+
+    [DllImport("__Internal")]
+    private static extern void ResizeGame();
+
+    private int Width = 0;
+    private int Height = 0;
 
     public TextMeshProUGUI mainText;
 
@@ -26,12 +33,36 @@ public class GameController : Singleton<GameController>
         
         textInput = GetComponent<TextInput>();
 
-        gameRunning = false;
+        var tempSingleton1 = ProceduralGameLoop.Instance;
+        var tempSingleton2 = ResourceProductionManager.Instance;
+        var tempSingleton3 = ResourceUpgradeManager.Instance;
+
+        ResourceProductionManager.Instance.FreshStartProtocol();
+
+        gameRunning = true;
     }
 
     void Start()
     {
+        #if !UNITY_EDITOR
+        ResizeGame();
+        #endif
         ClearMainText();
+    }
+
+    public void SetGameWidth(int width)
+    {
+        Width = width;
+    }
+
+    public void SetGameHeight(int height)
+    {
+        Height = height;
+    }
+
+    public void SetGameResolution()
+    {
+        Screen.SetResolution(Width, Height, false);
     }
 
     public void ClearMainText()

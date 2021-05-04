@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Stale Wheat
+  m_EditorClassIdentifier: 
+  eventName: Stale Wheat
+  eventDescription: 'Some of your Wheat has gone stale, you''re going to have to throw
+    it away.
+
+    [ -10% to Wheat''s current supply ]'
+  eventWeight: 3
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 0
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wheat
+    targetResourceAttribute: 4
+    modifierValue:
+      valueToChange: -10
+      percent: 1
+  eventRequirements:
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}
+  - {fileID: 11400000, guid: 4b6415b0c3282854091fedffb8dbc0b6, type: 2}

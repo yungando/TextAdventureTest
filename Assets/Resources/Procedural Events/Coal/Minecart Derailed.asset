@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Minecart Derailed
+  m_EditorClassIdentifier: 
+  eventName: Minecart Derailed
+  eventDescription: 'Your miners were messing about with the Minecart, sending it
+    too fast through the mine. It fell off the rails. They won''t be able to use it
+    to store Coal until it''s back up.
+
+    [ Temporarily decreases Coal''s supply capacity by 200 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Coal
+    targetResourceAttribute: 2
+    modifierValue:
+      valueToChange: -200
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: 4d491f844d23da14fbf8e73304b0682f, type: 2}
+  - {fileID: 11400000, guid: ce1cac0ffe891174eb690218374f9432, type: 2}

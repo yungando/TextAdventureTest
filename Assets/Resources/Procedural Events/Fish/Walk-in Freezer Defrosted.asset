@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Walk-in Freezer Defrosted
+  m_EditorClassIdentifier: 
+  eventName: Walk-in Freezer Defrosted
+  eventDescription: 'Someone left the freezer''s door open and let all the cold out.
+    You won''t be able to store fish in here until it''s cooled down again.
+
+    [ Temporarily decreased Fish'' supply capacity by 450 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Fish
+    targetResourceAttribute: 2
+    modifierValue:
+      valueToChange: -450
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: 05af6802579280c43aacfc4c7cadaa74, type: 2}
+  - {fileID: 11400000, guid: d83f7f5ba4531be4689c927858bdfc33, type: 2}

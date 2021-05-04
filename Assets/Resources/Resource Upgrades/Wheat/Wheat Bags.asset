@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e983f914847ad0141a7b049128e6b8f5, type: 3}
+  m_Name: Wheat Bags
+  m_EditorClassIdentifier: 
+  upgradeName: Wheat Bags
+  upgradeCategory: 2
+  upgradeDescription: 'Equips your farmers with bags to carry more Wheat.
+
+    [ Permanently increases Wheat''s supply per production by 10 ]'
+  unlocked: 0
+  goldToUnlock: 200
+  resourceModifiers:
+  - targetResource: Wheat
+    targetResourceAttribute: 3
+    modifierValue:
+      valueToChange: 10
+      percent: 0
+  upgradeRequirements:
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}

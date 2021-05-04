@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: You Win
+  m_EditorClassIdentifier: 
+  eventName: You Win
+  eventDescription: 'Congratulations, you endured all the game''s events. You bought
+    every resource and bought every upgrade. Send a screenshot of this event triggering
+    to the developer and he''ll send you a thumbs up.
+
+
+    This is the end of the game. No more events will trigger, but all your resources
+    will continue to collect.
+
+
+    Thanks for playing.'
+  eventWeight: 1000
+  minTimeToNextEvent: 100000
+  maxTimeToNextEvent: 100000
+  duration: 100000
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wood
+    targetResourceAttribute: 4
+    modifierValue:
+      valueToChange: 1
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: 104d1f8c78c106249bcf622c8e265457, type: 2}
+  - {fileID: 11400000, guid: e3c7ed96c7226cb4a91eda1321bb2cfd, type: 2}
+  - {fileID: 11400000, guid: 3f4188eca0a7073459dfddeb4c3c03c6, type: 2}
+  - {fileID: 11400000, guid: 4d491f844d23da14fbf8e73304b0682f, type: 2}
+  - {fileID: 11400000, guid: ce1cac0ffe891174eb690218374f9432, type: 2}
+  - {fileID: 11400000, guid: acb2caf0fdb42b94285c25518b7062c1, type: 2}
+  - {fileID: 11400000, guid: fde2981f0de89654fb40f910ac46d6e0, type: 2}
+  - {fileID: 11400000, guid: 05af6802579280c43aacfc4c7cadaa74, type: 2}
+  - {fileID: 11400000, guid: f6febaa1397526048a346bc7345cbcb7, type: 2}
+  - {fileID: 11400000, guid: 3e67393123b03564e8badc911d1fb657, type: 2}
+  - {fileID: 11400000, guid: 1480b191c09048b438b7f444f6fa9e32, type: 2}
+  - {fileID: 11400000, guid: d83f7f5ba4531be4689c927858bdfc33, type: 2}
+  - {fileID: 11400000, guid: 9283a31e4b0b101409cc6ee1d2124f9e, type: 2}
+  - {fileID: 11400000, guid: ed2425381fa292c40b0ef624672e3727, type: 2}
+  - {fileID: 11400000, guid: a2f62c62ae6e68e47bec67c1735b4253, type: 2}
+  - {fileID: 11400000, guid: ad6cb553a7e8ac042bbca2df5957f207, type: 2}
+  - {fileID: 11400000, guid: 12779a6e61aec974bad885d749930f52, type: 2}
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}
+  - {fileID: 11400000, guid: e035ebc91e9b0e340ae2fac07002277b, type: 2}
+  - {fileID: 11400000, guid: 55f02728ca51e6c45956d8351e8c3ffd, type: 2}
+  - {fileID: 11400000, guid: 36c2537697b69b9428fe0dc992272d18, type: 2}
+  - {fileID: 11400000, guid: cb7a150b7559b4748b2eeda2d736433c, type: 2}
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}
+  - {fileID: 11400000, guid: 02bc0d8c97503f2438b41767554eb29f, type: 2}

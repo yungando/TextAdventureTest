@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: help
   m_EditorClassIdentifier: 
   keyWord: help
-  text: "help\t\t\tLists all commands.\nproject\t\t\tTypes general information about
-    the Unity Project.\nclear\t\t\tClears the console screen.\nkeyboard\t\tToggles
-    the keyboard audio effect.\nambient\t\tToggles the spatial ambient audio effects.\nlorem\t\tTypes
-    the \"Lorem Ipsum\" placeholder text in the console.\nquit\t\t\tCloses the console
-    screen."
+  text: "General Commands:\n\n\t> help\t\t\tLists all commands, gives information
+    about other commands\n\t> clear\t\t\tClears the on-screen log\n\nHelp Commands:\n\n\t>
+    help tutorial\t\tHow the game works\n\t> help quick guide\t\tHow to get started
+    playing\n\t> help project\t\tInformation about the Game\n\t> help lorem\t\tFiller
+    text output\n\nGameplay Commands:\n\n\t> check *\t\t\tCheck the status of Gold,
+    or a specific Resource or Upgrade*\n\t> list\t\t\tLists all available Resources
+    and Upgrades\n\t> info *\t\t\tInformation about a specific Resource or Upgrade*\n\t>
+    unlock *\t\tPurchases a specific Resource or Upgrade*\n\t> sell *\t\t\tSells the
+    entire current supply of a specific Resource*\n\n* Any listed command with an
+    asterisk requires extra input. In most cases this will be an object's name. Do
+    not use asterisks in commands. For example:\n\n\t> check gold\n\t> info rune axes\n\t>
+    unlock wood\n\n** Any listed appearance of the greater than symbol > is intended
+    to portray example user input."

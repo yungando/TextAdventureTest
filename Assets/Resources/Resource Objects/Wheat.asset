@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Wheat
   m_EditorClassIdentifier: 
   resourceName: Wheat
-  resourceDescription: Wheat Description
+  resourceDescription: Common Wheat, cultivated for its grain.
   unlocked: 0
   goldToUnlock: 200
   timeToProduce:
-    _baseValue: 60
+    _baseValue: 5
   currentProductionProgress: 0
   currentSupply: 0
   goldValue:
-    _baseValue: 0.5
+    _baseValue: 2
   supplyCapacity:
     _baseValue: 200
   supplyPerProduction:
-    _baseValue: 25
+    _baseValue: 5

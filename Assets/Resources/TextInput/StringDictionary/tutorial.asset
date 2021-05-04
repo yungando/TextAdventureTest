@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeeb79d230ac94090cad7132ba97de, type: 3}
+  m_Name: tutorial
+  m_EditorClassIdentifier: 
+  keyWord: tutorial
+  text: "The game uses a \"console command\"-like input system to communicate with
+    the player. Type commands in the input field, press enter to execute and the game
+    will respond in the log. The log's text animation can be skipped at any time by
+    pressing ESC or Left Mouse. The white bar on the right hand side of the screen
+    is a standard Scroll Bar. This can be used to go back and read previous commands
+    and responses. The Mouse's Scroll Wheel does the same.\n\nThis is a Resource Management
+    game, akin to \"Cookie-Clicker\" but for settlement Resources such as Wood, Fish,
+    Wheat and Coal. The goal is to accumulate as much Gold as possible by collecting
+    and selling supplies of these Resources. There is a balance to strike between
+    saving Gold and spending it to unlock new Resources and Upgrades to increase your
+    collecting efficiency.\n\nOnce a Resource is unlocked it will be automatically
+    collected over time, increasing your supply until it reaches it's supply capacity.
+    To continue collecting a Resource once it's reached it's capacity, the current
+    supply must be manually sold.\n\nEach Resource has unique stats for the following:\n\n\tHow
+    long it takes to collect\n\tHow much is collected each cycle\n\tHow much you can
+    store\n\tThe Gold value\n\nUpgrades will positively effect these stats in some
+    way, increasing your efficiency in collecting and selling the Resources. Upgrades
+    become available to unlock once you have unlocked the Resource it applies to.
+    You can't unlock an upgrade for Coal if you aren't collecting it.\n\nGameplay
+    Events will happen regularly throughout the gameplay and will effect the same
+    stats as Upgrades. The events will try and respond to your actions with each one
+    doing something different; Their effects won't always be positive. When an event
+    is triggered, a message will show up in game describing the event and its effects,
+    as well as displaying the event's name in green.\n\nThere are five main commands
+    used in gameplay: List, Unlock, Info, Check and Sell. To find out how these work,
+    add the name of the command to the help command input:\n\n\t> help list\n\t> help
+    unlock\n\t> help info\n\t> help check\n\t> help sell\n\nIf you read through the
+    information in the help commands above and are still stuck, give the following
+    command a read on how to start playing:\n\n\t> help quick guide\n\nFor a list
+    of all available commands, type:\n\n\t> help"

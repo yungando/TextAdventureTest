@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e983f914847ad0141a7b049128e6b8f5, type: 3}
+  m_Name: Rune Hoes
+  m_EditorClassIdentifier: 
+  upgradeName: Rune Hoes
+  upgradeCategory: 2
+  upgradeDescription: 'Superior guardian hoes, makes collecting Wheat significantly
+    faster.
+
+    [ Permanently decreases Wheat''s time to produce by 50% ]'
+  unlocked: 0
+  goldToUnlock: 500
+  resourceModifiers:
+  - targetResource: Wheat
+    targetResourceAttribute: 0
+    modifierValue:
+      valueToChange: -50
+      percent: 1
+  upgradeRequirements:
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}

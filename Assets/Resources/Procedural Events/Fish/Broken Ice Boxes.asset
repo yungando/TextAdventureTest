@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Broken Ice Boxes
+  m_EditorClassIdentifier: 
+  eventName: Broken Ice Boxes
+  eventDescription: 'The lids of the ice boxes fell off, your fishermen won''t be
+    able use them to carry fish without them.
+
+    [ Temporarily decreased Fish''s supply per production by 20 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Fish
+    targetResourceAttribute: 3
+    modifierValue:
+      valueToChange: -20
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: 05af6802579280c43aacfc4c7cadaa74, type: 2}
+  - {fileID: 11400000, guid: f6febaa1397526048a346bc7345cbcb7, type: 2}

@@ -13,17 +13,21 @@ MonoBehaviour:
   m_Name: project
   m_EditorClassIdentifier: 
   keyWord: project
-  text: 'All keyboard text effects can be skipped at any time by pressing either ESC
-    or Left Mouse. All text in the on screen log can be scrolled with either the bar
-    on the right hand side of the screen, or with a standard scroll wheel.
-
-
-    All ambient audio, i.e. Cough, Door and Fire sound effects make use of 2D spatial
-    positioning.
-
-
-    Keyboard, cough and door sound effects recorded with a Blue Yeti. Royalty free
-    fire sound effect from zapsplat.com.
-
-
-    The application can be closed by typing "quit" in the input field.'
+  text: "This project attempts to evalute the effectiveness of Procedural Gameplay
+    Events for world building and Gameplay customisation. A list of pre-written Gameplay
+    Events has been created, each with their own editable attributes:\n\n\tTitle\n\tDescription\n\tDuration\n\tWeight\n\tMinimum/Maximum
+    time until the next Event\n\tList of Modifiers\n\tList of Requirements\n\nIn the
+    current game prototype, the Gameplay Events are added to a list if their trigger
+    requirements are met. The game uses this list, and Event's weights to determine
+    which Event to trigger for the player next. Once triggered, the chosen Event's
+    Modifiers with be applied to the appropriate Resource Attributes, and are removed
+    at the end of the Event's duration.\n\nEvents, Modifers and Requirements are extremely
+    modular and easy to add to within the Unity Editor. There can be any number of
+    Events, and each Event can have any number of Modifiers and Requirements, allowing
+    for extremely complex combinations that lead to rare Events.\n\nUpgrades use the
+    same base Modifiers and Requirements as Events, but are created for the player
+    to choose to permanently improve their gameplay and counter-act the Events. Upgrades
+    have the same complex capacity as Events.\n\nThe timings for the current Procedural
+    gameplay loop were chosen to make the Events more common than in what would be
+    normal gameplay. This was done to put the Events at the forefront of the Gameplay,
+    making them more obvious for testers."

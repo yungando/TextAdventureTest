@@ -27,8 +27,6 @@ public class List : Command
         List<ResourceUpgrade> _woodUpgrades = new List<ResourceUpgrade>();
         List<ResourceUpgrade> _specialUpgrades = new List<ResourceUpgrade>();
 
-        upgradeInfo.Add("All available new resources and upgrades are available here. Use the <i>Info</i> command to read unlock requirments and descriptions. Use the <i>Unlock</i> command to purchase with Gold.");
-
         bool allResourcesUnlocked = false;
 
         var resources = resourceProductionManager.GetUnlockedResources(false).OrderBy(resource => resource.goldToUnlock).ToList();
@@ -42,11 +40,11 @@ public class List : Command
         {
             List<string> resourceStringList = new List<string>();
 
-            resourceStringList.Add("\tNew Resources:\n");
+            resourceStringList.Add("New Resources:\n");
 
             foreach (var resource in resources)
             {
-                resourceStringList.Add($"\t\t{resource.resourceName}\t\t-\t\t{resource.goldToUnlock} Gold");
+                resourceStringList.Add($"\t{resource.resourceName} - {resource.goldToUnlock} Gold");
             }
 
             upgradeInfo.Add(string.Join("\n", resourceStringList));
@@ -80,56 +78,56 @@ public class List : Command
         {
             List<string> woodUpgradeList = new List<string>();
 
-            woodUpgradeList.Add("\tWood Upgrades:\n");
+            woodUpgradeList.Add("Wood Upgrades:\n");
 
             foreach (var upgrade in _woodUpgrades)
             {
-                woodUpgradeList.Add($"\t\t{upgrade.upgradeName}\t\t-\t\t{upgrade.goldToUnlock} Gold");
+                woodUpgradeList.Add($"\t{upgrade.upgradeName} - {upgrade.goldToUnlock} Gold");
             }
 
             upgradeInfo.Add(string.Join("\n", woodUpgradeList));
-        }
-
-        if (resourceProductionManager.TryGetResource("Coal").unlocked && _coalUpgrades.Count != 0)
-        {
-            List<string> coalUpgradeList = new List<string>();
-
-            coalUpgradeList.Add("\tCoal Upgrades:\n");
-
-            foreach (var upgrade in _coalUpgrades)
-            {
-                coalUpgradeList.Add($"\t\t{upgrade.upgradeName}\t\t-\t\t{upgrade.goldToUnlock} Gold");
-            }
-
-            upgradeInfo.Add(string.Join("\n", coalUpgradeList));
-        }
-
-        if (resourceProductionManager.TryGetResource("Fish").unlocked && _fishUpgrades.Count != 0)
-        {
-            List<string> fishUpgradeList = new List<string>();
-
-            fishUpgradeList.Add("\tFish Upgrades:\n");
-
-            foreach (var upgrade in _fishUpgrades)
-            {
-                fishUpgradeList.Add($"\t\t{upgrade.upgradeName}\t\t-\t\t{upgrade.goldToUnlock} Gold");
-            }
-
-            upgradeInfo.Add(string.Join("\n", fishUpgradeList));
         }
 
         if (resourceProductionManager.TryGetResource("Wheat").unlocked && _wheatUpgrades.Count != 0)
         {
             List<string> wheatUpgradeList = new List<string>();
 
-            wheatUpgradeList.Add("\tWheat Upgrades:\n");
+            wheatUpgradeList.Add("Wheat Upgrades:\n");
 
             foreach (var upgrade in _wheatUpgrades)
             {
-                wheatUpgradeList.Add($"\t\t{upgrade.upgradeName}\t\t-\t\t{upgrade.goldToUnlock} Gold");
+                wheatUpgradeList.Add($"\t{upgrade.upgradeName} - {upgrade.goldToUnlock} Gold");
             }
 
             upgradeInfo.Add(string.Join("\n", wheatUpgradeList));
+        }
+
+        if (resourceProductionManager.TryGetResource("Fish").unlocked && _fishUpgrades.Count != 0)
+        {
+            List<string> fishUpgradeList = new List<string>();
+
+            fishUpgradeList.Add("Fish Upgrades:\n");
+
+            foreach (var upgrade in _fishUpgrades)
+            {
+                fishUpgradeList.Add($"\t{upgrade.upgradeName} - {upgrade.goldToUnlock} Gold");
+            }
+
+            upgradeInfo.Add(string.Join("\n", fishUpgradeList));
+        }
+
+        if (resourceProductionManager.TryGetResource("Coal").unlocked && _coalUpgrades.Count != 0)
+        {
+            List<string> coalUpgradeList = new List<string>();
+
+            coalUpgradeList.Add("Coal Upgrades:\n");
+
+            foreach (var upgrade in _coalUpgrades)
+            {
+                coalUpgradeList.Add($"\t{upgrade.upgradeName} - {upgrade.goldToUnlock} Gold");
+            }
+
+            upgradeInfo.Add(string.Join("\n", coalUpgradeList));
         }
 
         if (allResourcesUnlocked && _specialUpgrades.Count != 0)
@@ -140,13 +138,13 @@ public class List : Command
 
             foreach (var upgrade in _specialUpgrades)
             {
-                specialUpgradeList.Add($"\t{upgrade.upgradeName}\t\t-\t\t{upgrade.goldToUnlock} Gold");
+                specialUpgradeList.Add($"\t{upgrade.upgradeName} - {upgrade.goldToUnlock} Gold");
             }
 
             upgradeInfo.Add(string.Join("\n", specialUpgradeList));
         }
 
-        if (upgradeInfo.Count == 1)
+        if (upgradeInfo.Count == 0)
         {
             upgradeInfo.Add("\tAll upgrades are unlocked.");
         }

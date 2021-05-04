@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeeb79d230ac94090cad7132ba97de, type: 3}
+  m_Name: list
+  m_EditorClassIdentifier: 
+  keyWord: list
+  text: "The List command shows everything that is currently available to unlock.
+    At the start of the game everything is locked and only Resources are available
+    to purchase. Make sure to check the List after you unlock a Resources to see what
+    upgrades it has. List is used standalone and has no required input. Example use:\n\n\t>
+    list"

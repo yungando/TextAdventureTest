@@ -54,7 +54,7 @@ public class ProceduralGameLoop : Singleton<ProceduralGameLoop>
         {
             Debug.Log("Nothing Event Triggered.");
 
-            timeTillEvent = 10.0f;
+            timeTillEvent = 15.0f;
 
             return;
         }

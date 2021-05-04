@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeeb79d230ac94090cad7132ba97de, type: 3}
+  m_Name: sell
+  m_EditorClassIdentifier: 
+  keyWord: sell
+  text: "The Sell command trades the total current supply of a given Resource for
+    it's Gold value. You can sell at any time, and you will clear your current inventory
+    of that Resource, whether you have 2 or 200. Input is the name of the Resource
+    you wish to sell. Example use:\n\n\t> sell fish"

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e983f914847ad0141a7b049128e6b8f5, type: 3}
+  m_Name: Clown Fish
+  m_EditorClassIdentifier: 
+  upgradeName: Clown Fish
+  upgradeCategory: 1
+  upgradeDescription: 'Your scouts find clown fish in a different lake. Clown fish
+    are much more valuable.
+
+    [ Permanently increases Fish''s Gold value by 12 ]'
+  unlocked: 0
+  goldToUnlock: 600
+  resourceModifiers:
+  - targetResource: Fish
+    targetResourceAttribute: 1
+    modifierValue:
+      valueToChange: 12
+      percent: 0
+  upgradeRequirements:
+  - {fileID: 11400000, guid: 05af6802579280c43aacfc4c7cadaa74, type: 2}

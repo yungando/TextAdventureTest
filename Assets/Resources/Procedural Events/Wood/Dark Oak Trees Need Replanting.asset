@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Dark Oak Trees Need Replanting
+  m_EditorClassIdentifier: 
+  eventName: Dark Oak Trees Need Replanting
+  eventDescription: 'You cleared the Dark Oak Forest of all of it''s trees. They''ll
+    need to grow back. In the mean time, chop regular trees.
+
+    [ Temporarily decreases Wood''s Gold value by 4 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wood
+    targetResourceAttribute: 1
+    modifierValue:
+      valueToChange: -4
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}
+  - {fileID: 11400000, guid: e035ebc91e9b0e340ae2fac07002277b, type: 2}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Lost the Bread Recipe
+  m_EditorClassIdentifier: 
+  eventName: Lost the Bread Recipe
+  eventDescription: 'Somehow your bakers lost their bread recipe, so you''ll have
+    to go back to selling straight Wheat.
+
+    [ Temporarily decrease Wheat''s Gold value by 8 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wheat
+    targetResourceAttribute: 1
+    modifierValue:
+      valueToChange: -8
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: e044490b157fe68448ea86c14e55b110, type: 2}
+  - {fileID: 11400000, guid: 9283a31e4b0b101409cc6ee1d2124f9e, type: 2}

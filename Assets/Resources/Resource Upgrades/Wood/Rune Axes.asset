@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Rune Axes
   upgradeCategory: 3
-  upgradeDescription: Superior axes, chops wood fucking loads faster.
+  upgradeDescription: 'Superior axes, chops wood significantly faster.
+
+    [ Permanently decreases Wood''s time to produce by 50% ]'
   unlocked: 0
-  goldToUnlock: 100
+  goldToUnlock: 250
   resourceModifiers:
   - targetResource: Wood
-    targetResourceAttribute: 3
+    targetResourceAttribute: 0
     modifierValue:
-      valueToChange: 100
+      valueToChange: -50
       percent: 1
-  upgradeRequirements: []
+  upgradeRequirements:
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}

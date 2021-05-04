@@ -16,14 +16,14 @@ MonoBehaviour:
   upgradeCategory: 3
   upgradeDescription: 'Equips your lumberjacks with sacks to carry more logs.
 
-    [Permanently increases Wood''s supply per production by 5]'
+    [ Permanently increases Wood''s supply per production by 2 ]'
   unlocked: 0
   goldToUnlock: 100
   resourceModifiers:
   - targetResource: Wood
     targetResourceAttribute: 3
     modifierValue:
-      valueToChange: 5
+      valueToChange: 2
       percent: 0
   upgradeRequirements:
   - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}

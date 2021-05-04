@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Coal
   m_EditorClassIdentifier: 
   resourceName: Coal
-  resourceDescription: Coal Description
+  resourceDescription: Coal is a combustible black or brownish-black sedimentary rock.
   unlocked: 0
   goldToUnlock: 400
   timeToProduce:
-    _baseValue: 25
+    _baseValue: 15
   currentProductionProgress: 0
   currentSupply: 0
   goldValue:
-    _baseValue: 10
+    _baseValue: 4
   supplyCapacity:
-    _baseValue: 25
+    _baseValue: 400
   supplyPerProduction:
-    _baseValue: 2
+    _baseValue: 15

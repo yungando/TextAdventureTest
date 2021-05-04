@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaeeb79d230ac94090cad7132ba97de, type: 3}
+  m_Name: quick guide
+  m_EditorClassIdentifier: 
+  keyWord: quick guide
+  text: "To begin, you'll need to unlock your first Resource. To see what is available,
+    use the command:\n\n\t> list\n\nHere you will see the available Resources, and
+    once a Resource is unlocked, here is where you will see it's available Upgrades.
+    You start the game with 100 Gold, enough to unlock the first available Resource,
+    Wood. To confirm you have enough Gold, use the command:\n\n\t> check gold\n\nUnlocking
+    a Resource will start it collecting automatically until it reaches it's supply
+    capacity. Wood's starting supply capacity is 100. To unlock Wood, use the command:\n\n\t>
+    unlock wood\n\nOnce Wood reaches it's supply capacity, you'll need to sell it
+    so you can collect more. To sell Wood for it's default Gold value, use the command:\n\n\t>
+    sell wood\n\nNow that Wood is unlocked and collecting, the Events will start to
+    effect your gameplay so watch out for them. After your first sale of a complete
+    supply of Wood, you will have 50 Gold. Sell one more full supply of Wood and you
+    should have enough to unlock your first Wood Upgrade. You could also save up and
+    instead unlock another Resource to collect. To see what's available, use the command:\n\n\t>
+    list\n\nIf you see an Upgrade or Resource you would like more information on,
+    use the info command. The first available Upgrade for Wood is Log Sacks, so lets
+    find out more about that upgrade by using the command:\n\n\t> info log sacks\n\nThis
+    should cover the full gameplay loop, so you should be ready to play."

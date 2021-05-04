@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0a857caf09b16478101270b9d17ef6, type: 3}
+  m_Name: Family Visit
+  m_EditorClassIdentifier: 
+  eventName: Family Visit
+  eventDescription: 'Your family decided to visit you, so you had to clear out the
+    Log Warehouse so they had somewhere to stay.
+
+    [ Temporarily decreases Wood''s supply capacity by 150 ]'
+  eventWeight: 1
+  minTimeToNextEvent: 30
+  maxTimeToNextEvent: 30
+  duration: 10
+  isActive: 0
+  resourceModifiers:
+  - targetResource: Wood
+    targetResourceAttribute: 2
+    modifierValue:
+      valueToChange: -150
+      percent: 0
+  eventRequirements:
+  - {fileID: 11400000, guid: a6da60aa0dfc00442a115c8716c4d35c, type: 2}
+  - {fileID: 11400000, guid: 02bc0d8c97503f2438b41767554eb29f, type: 2}
+  - {fileID: 11400000, guid: 36c2537697b69b9428fe0dc992272d18, type: 2}

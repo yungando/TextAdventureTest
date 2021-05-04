@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e983f914847ad0141a7b049128e6b8f5, type: 3}
+  m_Name: An immense amount of Pressure
+  m_EditorClassIdentifier: 
+  upgradeName: An immense amount of Pressure
+  upgradeCategory: 0
+  upgradeDescription: 'You feel the weight of the world on your shoulders, so you
+    channel that into your Coal to turn into Diamonds. Diamonds are pretty valuable.
+
+    [ Permanently increases Coal''s Gold value by 16 ]'
+  unlocked: 0
+  goldToUnlock: 800
+  resourceModifiers:
+  - targetResource: Coal
+    targetResourceAttribute: 1
+    modifierValue:
+      valueToChange: 16
+      percent: 0
+  upgradeRequirements:
+  - {fileID: 11400000, guid: 4d491f844d23da14fbf8e73304b0682f, type: 2}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e983f914847ad0141a7b049128e6b8f5, type: 3}
+  m_Name: Minecart
+  m_EditorClassIdentifier: 
+  upgradeName: Minecart
+  upgradeCategory: 0
+  upgradeDescription: 'A brand new minecart to store extra coal in.
+
+    [ Permanently increases Coal''s supply capacity by 200 ]'
+  unlocked: 0
+  goldToUnlock: 600
+  resourceModifiers:
+  - targetResource: Coal
+    targetResourceAttribute: 2
+    modifierValue:
+      valueToChange: 200
+      percent: 0
+  upgradeRequirements:
+  - {fileID: 11400000, guid: 4d491f844d23da14fbf8e73304b0682f, type: 2}

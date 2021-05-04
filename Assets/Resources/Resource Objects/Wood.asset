@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   resourceName: Wood
-  resourceDescription: Perfectly normal, straight wood.
+  resourceDescription: Good, strong Wood.
   unlocked: 1
   goldToUnlock: 100
   timeToProduce:
     _baseValue: 1
-  currentProductionProgress: 1.7985601
-  currentSupply: 3
+  currentProductionProgress: 0
+  currentSupply: 100
   goldValue:
     _baseValue: 1
   supplyCapacity:
-    _baseValue: 50
+    _baseValue: 100
   supplyPerProduction:
     _baseValue: 1

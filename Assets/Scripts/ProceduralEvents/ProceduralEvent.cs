@@ -47,8 +47,6 @@ public class ProceduralEvent : ScriptableObject
             {
                 continue;
             }
-            
-            //Debug.Log($"Adding {resource.name} effect {e.targetResourceAttribute}");
 
             switch (e.targetResourceAttribute)
             {
@@ -81,10 +79,11 @@ public class ProceduralEvent : ScriptableObject
         GameController.Instance.LogStringWithReturn($"Event Triggered:\t<color=#54b948>{eventName}</color>\n{eventDescription}");
         GameController.Instance.UpdateMainText();
 
-        isActive = true;
-
         if (duration > 0)
-            RemoveEventAfterSeconds();
+        {
+            isActive = true;
+            GameController.Instance.StartCoroutine(RemoveEventAfterSeconds());
+        }
     }
 
     public bool EventRequirementsMet()
@@ -100,19 +99,18 @@ public class ProceduralEvent : ScriptableObject
         return true;
     } 
 
-    public async void RemoveEventAfterSeconds()
+    public IEnumerator RemoveEventAfterSeconds()
     {
-        //TODO: Remove async and transfer over to a lifetime variable that is decreased and checked then removed at <= 0
-        await System.Threading.Tasks.Task.Delay(duration * 1000);
-
+        yield return new WaitForSeconds(duration);
+        
         if (Application.IsPlaying(this) == false)
-            return;
+        {
+            yield break;
+        }
 
         foreach (var e in resourceModifiers)
         {
             var resource = ResourceProductionManager.Instance.TryGetResource(e.targetResource);
-            
-            //Debug.Log($"Removing {resource.name.ToString()} effect {e.targetResourceAttribute.ToString()}");
 
             switch (e.targetResourceAttribute)
             {
